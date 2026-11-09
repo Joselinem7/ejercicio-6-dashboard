@@ -1,0 +1,12 @@
+Ejercicio 6 - Diseño previo
+
+Modelo: Dashboard contiene una sola List<Widget>. Widget es abstracta e implementa
+Renderizable y Comparable<Widget>. Sus datos son id, nombre y memoriaKB.
+Clima y Reloj son informativos. Tareas y Alerta también implementan Interactivo.
+Cada subclase define renderizar(). Las interactivas definen clic() y actualizar().
+Dashboard permite agregar, buscar(int), buscar(String) y ordenar por memoria.
+Controlador recibe el Dashboard y devuelve textos a Principal. Usa parámetros
+Renderizable e Interactivo para renderizar e interactuar sin depender del tipo concreto.
+Principal contiene Scanner, menú y toda la salida de consola (vista y driver).
+Los datos del clima son de ejemplo; el reloj usa la hora del sistema.
+Las tareas usan un contador para mantener el ejemplo sencillo, sin otra lista.
